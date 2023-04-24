@@ -12,16 +12,16 @@ for (let j = 0; j < string.length; j++) {
   // reset vowels to 0
   let vowels = 0;
   // assign each string variable in an array to word variable
-  let word = string[j];
+  const word = string[j];
   // use FOR loop to check a string variable from an array
   for (let i = 0; i < word.length; i++) {
     // IF-ELSE statement to check for number of consonants and vowels
     if (
-      word[i] == "a" ||
-      word[i] == "e" ||
-      word[i] == "i" ||
-      word[i] == "o" ||
-      word[i] == "u"
+      word[i] === "a" ||
+      word[i] === "e" ||
+      word[i] === "i" ||
+      word[i] === "o" ||
+      word[i] === "u"
     ) {
       // count number of vowels
       vowels++;
